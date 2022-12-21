@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
     	for 
 			fscanf(5°³ ÀÐ±â); 
 	}
-    
+    ifsele_genElement(...); 
     //1-3. FILE pointer close
     fclose(fp);
 	{
@@ -73,7 +73,8 @@ int main(int argc, const char * argv[]) {
                 break;
                 
             case MENU_PATIENT:
-                
+            	ifct_element
+            	printf(*age : i\n*, ifctele_getAge(ifct_element));
                 break;
                 
             case MENU_PLACE:
@@ -98,3 +99,4 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+

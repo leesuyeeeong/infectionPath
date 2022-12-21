@@ -102,3 +102,38 @@ char* ifctele_getPlaceName(int placeIndex)
 {
 	return countryName[placeIndex];
 }
+
+typedef struct ifs_ele {
+	//번호 -> 정수
+	//나이 -> 정수
+	//감염 시점 -> 정수
+	//감염 직전 이동경로 -> place_t p1; [N_HISTORY] 
+} ifs_ele_t;
+
+static ifs_ele_t ifsarray[20];
+static int ifs_cnt;
+
+void* ifctele_genElement(int index, int age, unsigned int detected_time, int history_place[N_HISTORY]);
+{
+	ifsarray[ifs_cnt].index = index;
+	ifsarray[ifs_cnt].index = index;
+	ifsarray[ifs_cnt].index = index;
+	ifsarray[ifs_cnt].index = index;
+	
+	ifs_cnt++;
+	
+	return (void*)&ifsarray[인덱스];
+}
+
+int ifctele_getAge(void* obj);// 구조체 안에서 나이 값을 빼주는 함수 
+{
+	ifs_ele_t *strPtr = (ifs_ele_t *)obj; 
+	return();
+}
+
+void ifsele_printElement(void* obj)
+{
+	ifs_ele_t *strPtr = (ifs_ele_t *)obj;
+	//print elements
+} 
+
